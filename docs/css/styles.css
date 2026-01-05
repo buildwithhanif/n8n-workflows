@@ -79,24 +79,35 @@ body {
   font-weight: 300;
 }
 
-.cta-text {
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.875rem 2rem;
   font-size: 1.1rem;
-  margin-top: 1rem;
-  opacity: 0.95;
-  font-weight: 400;
-}
-
-.cta-link {
-  color: #ffffff;
   font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: var(--transition);
+  color: #1a202c;
+  background: linear-gradient(135deg, #ffd700, #ffec80);
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
 }
 
-.cta-link:hover {
-  color: #ffd700;
-  text-decoration-thickness: 2px;
+.cta-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
+  background: linear-gradient(135deg, #ffec80, #ffd700);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(255, 215, 0, 0.7);
+  }
 }
 
 /* Search Section */
