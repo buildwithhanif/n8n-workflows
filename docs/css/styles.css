@@ -53,7 +53,7 @@ body {
 
 /* Header */
 .header {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8, #7dd3fc);
   color: white;
   padding: 2rem 0;
   text-align: center;
@@ -67,6 +67,19 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.logo-link {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.logo-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
 }
 
 .logo-emoji {
