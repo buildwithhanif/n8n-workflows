@@ -79,6 +79,26 @@ body {
   font-weight: 300;
 }
 
+.cta-text {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  opacity: 0.95;
+  font-weight: 400;
+}
+
+.cta-link {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: var(--transition);
+}
+
+.cta-link:hover {
+  color: #ffd700;
+  text-decoration-thickness: 2px;
+}
+
 /* Search Section */
 .search-section {
   padding: 3rem 0;
